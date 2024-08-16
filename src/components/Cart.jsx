@@ -5,7 +5,6 @@ import Trash from '../img/trash.svg';
 const Cart = () => {
   const { cartItems, removeFromCart } = useOutletContext();
 
-  // Calculate the total cost
   const totalCost = cartItems.reduce((total, item) => total + item.price * item.quantity, 0);
 
   return (

@@ -54,7 +54,7 @@ const ProductItem = ({ product, addToCart }) => {
         <p>{quantity}</p>
         <button onClick={handleIncrement} style={{ border: "none", backgroundColor: "white", fontSize: "2rem", cursor: "pointer" }}>+</button>
       </div>
-      <button onClick={handleAddToCart} style={{ fontSize: "1.25rem", padding: "1rem", border: "none", cursor: "pointer"}}>Add to Cart</button>
+      <button onClick={handleAddToCart} className="add" style={{ fontSize: "1.25rem", padding: "1rem", border: "none", cursor: "pointer"}}>Add to Cart</button>
     </div>
   );
 };
