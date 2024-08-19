@@ -10,8 +10,8 @@ const Cart = () => {
   return (
     <div style={{ padding: " 1rem 3rem"}}>
         <div style={{ display: "flex", justifyContent: "space-between", alignItems: "center", fontSize: "1.5rem" }}>
-            <h1>Your Shopping Cart</h1>
-            <div style={{ fontWeight: "bold", fontSize: "2rem" }}>
+            <h2>Your Shopping Cart</h2>
+            <div style={{ fontWeight: "bold", fontSize: "1rem" }}>
                 Total Cost: ${totalCost.toFixed(2)}
             </div>
         </div>
@@ -33,15 +33,15 @@ const Cart = () => {
                   src={item.img} 
                   alt={item.name} 
                   style={{ 
-                    width: "15rem", 
-                    height: "15rem", 
+                    width: "8rem", 
+                    height: "8rem", 
                     objectFit: "cover", 
                     marginRight: "2rem" 
                   }} 
                 />
                 <p 
                   style={{ 
-                    fontSize: "2rem", 
+                    fontSize: "1rem", 
                     flexGrow: 1 
                   }}
                 >
@@ -59,7 +59,7 @@ const Cart = () => {
                     src={Trash} 
                     alt="Trash" 
                     style={{ 
-                      width: "3rem" 
+                      width: "1.5rem" 
                     }} 
                   />
                 </button>

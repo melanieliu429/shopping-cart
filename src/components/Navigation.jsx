@@ -7,13 +7,13 @@ const Navigation = ({ cartItems }) => {
   const totalItems = cartItems.reduce((acc, item) => acc + item.quantity, 0);
 
   return (
-    <nav style={{ display: "flex", alignItems: "center", justifyContent: "space-between", backgroundColor: "lightBlue", fontSize: "1.5rem", padding: "0 3rem" }}>
-      <div style={{ display: "flex", gap: "2rem", alignItems: "center" }}>
-        <img src={brandLogo} alt="Logo" style={{ width: "3rem" }} />
+    <nav style={{ display: "flex", alignItems: "center", justifyContent: "space-between", backgroundColor: "lightBlue", fontSize: "0.75rem", padding: "0 1rem"}}>
+      <div style={{ display: "flex", gap: "1rem", alignItems: "center" }}>
+        <img src={brandLogo} alt="Logo" style={{ width: "1.5rem" }} />
         <h2>Berries and Cream</h2>
       </div>
       
-      <ul style={{ listStyleType: "none", display: "flex", gap: "2rem", alignItems: "center" }}>
+      <ul style={{ listStyleType: "none", display: "flex", gap: "1rem", alignItems: "center" }}>
         <li>
           <h2>
             <Link to="/" style={{ textDecoration: "none", color: "inherit" }}>
@@ -31,7 +31,7 @@ const Navigation = ({ cartItems }) => {
         <li style={{ position: "relative" }}>
           <h2>
             <Link to="/cart" style={{ textDecoration: "none", color: "inherit", position: "relative" }}>
-              <img src={cartIcon} alt="Cart Icon" style={{ width: "3rem" }} />
+              <img src={cartIcon} alt="Cart Icon" style={{ width: "2rem" }} />
               {totalItems > 0 && (
                 <span style={{
                   position: "absolute",
@@ -40,8 +40,8 @@ const Navigation = ({ cartItems }) => {
                   backgroundColor: "red",
                   color: "white",
                   borderRadius: "50%",
-                  padding: "0.2rem 0.5rem",
-                  fontSize: "1rem"
+                  padding: "0.2rem 0.3rem",
+                  fontSize: "0.5rem"
                 }}>
                   {totalItems}
                 </span>
