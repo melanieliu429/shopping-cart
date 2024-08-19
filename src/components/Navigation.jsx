@@ -9,7 +9,7 @@ const Navigation = ({ cartItems }) => {
   return (
     <nav style={{ display: "flex", alignItems: "center", justifyContent: "space-between", backgroundColor: "lightBlue", fontSize: "0.75rem", padding: "0 1rem"}}>
       <div style={{ display: "flex", gap: "1rem", alignItems: "center" }}>
-        <img src={brandLogo} alt="Logo" style={{ width: "1.5rem" }} />
+        <img src={brandLogo} alt="Logo" style={{ width: "2rem" }} />
         <h2>Berries and Cream</h2>
       </div>
       
