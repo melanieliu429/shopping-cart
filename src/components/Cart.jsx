@@ -69,7 +69,7 @@ const Cart = () => {
           
         </div>
       ) : (
-        <p style={{ fontSize: "2rem" }}>Items you have added to the cart will appear here.</p>
+        <p style={{ fontSize: "1rem" }}>Items you have added to the cart will appear here.</p>
       )}
     </div>
   );
